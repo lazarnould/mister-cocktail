@@ -1,4 +1,4 @@
-class CocktailController < ApplicationController
+class CocktailsController < ApplicationController
   def index
   end
 
