@@ -1,2 +1,17 @@
-<h1>Cocktail#show</h1>
-<p>Find me in app/views/cocktail/show.html.erb</p>
+<h1 class="text-center"><%= @cocktail.name %></h1>
+
+<p class="text-center">
+  <% @cocktail.doses.each do |dose|%>
+    <ul>
+      <li><%= dose.ingredient %></li>
+    </ul>
+    <%= dose.description %>
+  <% end %>
+</p>
+
+<p class="text-center"><%=@cocktail.ingredients%></p>
+
+
+<div class="wrapper flexbox text-center">
+<%= render 'doses/simple_form_dose'%>
+</div>
