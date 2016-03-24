@@ -1,4 +1,13 @@
 Rails.application.routes.draw do
+  root 'cocktail/index'
+  get 'cocktail/index'
+
+  get 'cocktail/show'
+
+  get 'cocktail/new'
+
+  get 'cocktail/create'
+
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
 
