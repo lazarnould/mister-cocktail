@@ -1,14 +1,13 @@
 Rails.application.routes.draw do
 
-
+  root 'cocktails#index'
 
   resources :cocktails do
-     resources :doses
+     resources :doses, except: [:destroy]
    end
 
   resources :doses, only: [:destroy]
 
-  root 'cocktails#index'
 
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".

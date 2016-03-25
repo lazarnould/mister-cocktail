@@ -1,15 +1,66 @@
 // Place all the styles related to the Cocktail controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
+a {
+  color:black
+}
+.home {
+  color: white;
+}
+
+a:hover {
+  transition: 300ms;
+  text-decoration: none;
+  color: #A2A1A2;
+}
+
 .btn-search {
   border-radius: 4px;
-  background-color: #33B0E7;
+  background-color: white;
+  color: black;
+  font-family: 'Great Vibes', cursive;
+}
+
+.btn-search {
+  border-radius: 4px;
+  background-color: white;
+  color: black;
+}
+
+.banner-content > a {
+  background-color: black;
   color: white;
+  opacity: 0.8;
+  font-family: "Raleway", "Helvetica", "sans-serif";
+}
+
+.navbar-wagon {
+  background-color: black;
+}
+.navbar-wagon > h3 {
+  font-family: 'Great Vibes', cursive;
+  color: white;
+  font-weight: lighter;
+}
+h3 {
+  font-family: 'Great Vibes', cursive;
+  color: black;
+  font-weight: lighter;
+}
+h1 {
+  font-family: 'Great Vibes', cursive;
+  color: black;
+  font-weight: lighter;
+}
+.navbar-wagon > p {
+  font-family: 'Great Vibes', cursive;
+  color: blacks;
+  font-weight: lighter;
 }
 
 .wrapper {
   background-color: black;
-  opacity: 0.7;
+  opacity: 0.8;
   padding: 20px;
   width: 30%;
   margin-left: 35%;
@@ -17,4 +68,36 @@
   color:white;
 }
 
+.banner {
+  color: white;
+  text-align: center;
+  height: 100vh;
+  /* if you have a 70px navbar => height: calc(100vh - 70px); */
+  background-size: cover !important;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.banner h1 {
+  font-size: 50px;
+  font-weight: bold;
+  text-shadow: 0px 1px rgba(0, 0, 0, 0.2);
+  font-family: 'Great Vibes', cursive;
+  color: white;
+}
+.banner p {
+  font-size: 20px;
+  font-weight: lighter;
+  color: rgba(255, 255, 255, 0.7);
+  margin-bottom: 20px;
+}
+
+ul {
+  list-style-type: none;
+}
+
+.banner-show {
+  height: 60vh;
+  background-position: center;
+}
 
